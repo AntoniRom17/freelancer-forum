@@ -8,7 +8,7 @@
 const NAMES = ["Alice", "Bob", "Carol", "Dave", "Eve", "Frank", "Grace", "Hank", "Ivy", "Jack"];
 const OCCUPATIONS = ["Writer", "Teacher", "Programmer", "Designer", "Engineer", "Analyst", "Developer", "Artist", "Consultant", "Researcher"];
 const PRICE_RANGE = { min: 20, max: 200 };
-const MAX_FREELANCERS = 30;
+const MAX_FREELANCERS = 1000;
 
 let freelancersState = [];
 let averageRateState = 0;
@@ -132,7 +132,7 @@ function render() {
   input.id = "countInput";
   input.type = "number";
   input.min = "1";
-  input.max = "30";
+  input.max = "100";
   input.value = freelancersState.length || 10;
 
   const button = document.createElement("button");
